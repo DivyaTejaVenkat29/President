@@ -1,0 +1,110 @@
+/* Default styles */
+.cartoons {
+    background-color: #236bb3; /* Light background */
+    color: #333; /* Dark text */
+  }
+  
+  /* Dark mode styles */
+  .dark-mode {
+    color: black;
+  }
+  .dark-toggle:hover {
+    transform: scale(1.1);
+  }
+  
+  .dark-mode .cartoons{
+    background-color: #444;
+    color:#fff;
+    
+  }
+  .fa-moon{
+    color: black;
+    align-items: center;
+  }
+  .fa-sun{
+    color: yellow;
+  }
+  
+  
+  .dark-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 99; /* Ensure the toggle button is on top of other content */
+    transition: transform 0.3s ease;
+  }
+  /* Other styles remain unchanged */
+  
+.cartoons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+    /* background: linear-gradient(135deg, #007bff, #6c757d); */
+    padding: 20px; /* Add padding for spacing */
+    gap: 20px; /* Add gap between grid items */
+  }
+  
+  .cartoon {
+    background-color: #fff; /* White background for each cartoon */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    padding: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+  .cartoon h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .cartoon img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow for images */
+  }
+  
+  .cartoon p, .cartoon h2 {
+    margin-bottom: 10px; /* Increased spacing */
+    color: #666;
+  }
+  
+  .cartoon ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .cartoon ul li {
+    color: #444;
+  }
+  
+  .cartoon.animated {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .title{
+    text-align: center;
+    font-size: 2rem;
+    color:#333;
+    margin-bottom: 20px;
+  }
+  .dark-mode-toggle{
+    margin-bottom: 20px;
+  }
+  .dark-mode-toggle label{
+    margin-left: 20px;
+  }
+  .search-container{
+    margin-bottom: 20px;
+  }
+  .search-container input{
+    padding: 10px;
+    width:100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
